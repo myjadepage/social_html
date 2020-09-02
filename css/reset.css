@@ -83,6 +83,7 @@ button::-moz-focus-inner {
 
 /* Make `a` like a button */
 [role="button"] {
+	line-height: inherit;
     color: inherit;
     display: inline-block;
     text-align: center;

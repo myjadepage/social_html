@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="start_page">
+        <div class="login_wrap">
+            <h2 class="top_title">               
+                <span class="sub_title">패스워드 변경</span>
+            </h2>
+            <div class="content_login">
+                <div class="login_verify">
+                    <input type="text" placeholder="아이디(이메일)">
+                    <button id="btn_verify_tranfer" type="button">인증 전송</button>
+                </div>
+                <div class="login_verify verify_comfirm">
+                    <input id="verify_number" type="text" placeholder="인증번호">
+                    <button id="btn_verify_comfirm" type="button">인증 확인</button>
+                </div>
+
+                <input type="password" placeholder="신규 패스워드입력">
+                <input type="password" placeholder="신규 패스워드입력 확인">
+            </div>
+            <div class="bottom_login">
+                <button type="button">패스워드 변경하기</button>
+                <a href="search_id.html" class="btn_search_id" role="button">아이디 찾기</a>
+            </div>           
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById('btn_verify_tranfer').addEventListener('click', function() {
+            document.querySelector('.verify_comfirm').style.display = 'block';
+        });
+        document.getElementById('btn_verify_comfirm').addEventListener('click', function() {
+            if (!document.getElementById("verify_number").value) {
+                alert("인증번호를 넣어주세요.");
+            } else {
+                alert("인증되었습니다.");
+            }
+            
+        });
+    </script>
+  
+</body>
+</html>
