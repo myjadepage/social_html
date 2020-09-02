@@ -22,7 +22,7 @@
             </div>
             <div class="bottom_login">
                 <button id="btn_login" class="btn btn-main" type="button">로그인</button>
-                <a href="join.html">회원가입</a>
+                <a href="#" id="popup">회원가입</a>
                 <a href="search_id.html">ID /</a> <a href="search_pw.html">PW찾기</a>
             </div>
         </div>
@@ -38,7 +38,10 @@
                 alert("비밀번호를 입력해 주세요");
                 return false;
             }            
-        })
+        });
+        document.getElementById("popup").addEventListener('click', function(){
+            alert("관리자에게 따로 연락주시기 바랍니다.");
+        });
     </script>
 </body>
 </html>
