@@ -1,6 +1,7 @@
 body{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   letter-spacing: -0.4px;
 }
 ::placeholder {
@@ -10,6 +11,32 @@ a, a:active,a:hover,a:focus, a:visited{
   text-decoration: none;
   color:inherit;
 }
+/*btn, input basic*/
+.btn-main {
+  background: orange;
+  color:#000;
+}
+.btn-sec{
+  background: lightseagreen;
+  color: #fff;
+}
+.input, .btn {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+}
+.btn {
+  font-weight: 700;
+  text-align: center;
+}
+.input {
+  box-sizing: border-box;
+  padding: 5px 5px 5px 10px;
+  border:1px solid #ccc;
+  background: #fff;
+}
+
+
 /* login page*/
 .start_page {
   position: absolute;
@@ -25,7 +52,6 @@ a, a:active,a:hover,a:focus, a:visited{
 }
 .login_wrap {
   width: 360px;
-  line-height: 1.5;
   text-align: left;
   color: rgba(255,255,255,0.9);
 }
@@ -38,26 +64,10 @@ a, a:active,a:hover,a:focus, a:visited{
   font-size: 0.8em;
   font-weight: 400;
 }
-.login_wrap input,.login_wrap button, .login_wrap a[role='button']{
+.login_wrap .input, .login_wrap .btn {
   margin: 5px 0;
 }
-.login_wrap input:not([type="checkbox"]),.login_wrap button, .login_wrap a[role='button'] {
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-}
-.login_wrap input:not([type="checkbox"]) {
-  box-sizing: border-box;
-  padding: 5px 5px 5px 10px;
-  border:1px solid #ccc;
-  background: #fff;
-}
-.login_wrap button, .login_wrap a[role='button']{  
-  font-weight: 700;
-  text-align: center;
-  color:#000;
-  background: orange;
-}
+
 .bottom_login {
   margin-top: 15px;
 }
@@ -68,21 +78,14 @@ a, a:active,a:hover,a:focus, a:visited{
 .login_verify {
   width: 100%;
 }
-.login_verify input[type='text'] {
+.login_verify .input{
   width: 77%;
   float: left;
 }
-.login_verify button {
+.login_verify .btn {
   width: 20%;
   float: right;
 }
-.verify_comfirm{
-  display: none;
-}
-.verify_comfirm button, .login_wrap .bottom_login .btn_search_id {  
-  background: lightseagreen;
-}
-
 .search_result {
   padding: 30px 0;
   font-size: 1.2em;

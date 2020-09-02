@@ -16,28 +16,28 @@
             </h2>
             <div class="content_login">
                 <div class="login_verify">
-                    <input type="text" placeholder="아이디(이메일)">
-                    <button id="btn_verify_tranfer" type="button">인증 전송</button>
+                    <input class="input" type="text" placeholder="아이디(이메일)">
+                    <button id="btn_verify_tranfer" class="btn btn-main" type="button">인증 전송</button>
                 </div>
-                <div class="login_verify verify_comfirm">
-                    <input id="verify_number" type="text" placeholder="인증번호">
-                    <button id="btn_verify_comfirm" type="button">인증 확인</button>
+                <div class="login_verify verify_confirm" style="display: none;">
+                    <input id="verify_number" class="input" type="text" placeholder="인증번호">
+                    <button id="btn_verify_confirm" class="btn btn-sec" type="button">인증 확인</button>
                 </div>
 
-                <input type="password" placeholder="신규 패스워드입력">
-                <input type="password" placeholder="신규 패스워드입력 확인">
+                <input class="input" type="password" placeholder="신규 패스워드입력">
+                <input class="input" type="password" placeholder="신규 패스워드입력 확인">
             </div>
             <div class="bottom_login">
-                <button type="button">패스워드 변경하기</button>
-                <a href="search_id.html" class="btn_search_id" role="button">아이디 찾기</a>
+                <button class="btn btn-main" type="button">패스워드 변경하기</button>
+                <a href="search_id.html" class="btn btn-sec" role="button">아이디 찾기</a>
             </div>
         </div>
     </div>
     <script>
         document.getElementById('btn_verify_tranfer').addEventListener('click', function() {
-            document.querySelector('.verify_comfirm').style.display = 'block';
+            document.querySelector('.verify_confirm').style.display = 'block';
         });
-        document.getElementById('btn_verify_comfirm').addEventListener('click', function() {
+        document.getElementById('btn_verify_confirm').addEventListener('click', function() {
             if (!document.getElementById("verify_number").value) {
                 alert("인증번호를 넣어주세요.");
             } else {
