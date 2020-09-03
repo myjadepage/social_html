@@ -11,6 +11,7 @@ a, a:active,a:hover,a:focus, a:visited{
   text-decoration: none;
   color:inherit;
 }
+
 /*btn, input basic*/
 .btn-main {
   background: orange;
@@ -94,4 +95,159 @@ a, a:active,a:hover,a:focus, a:visited{
 .search_result b{
   display: block;
   font-size: 1.4em;
+}
+
+
+/*top page*/
+.bg-main {
+  background-color: #0089ff;
+  color: #fff;
+}
+header, nav, section, footer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  padding: 0 40px;
+}
+header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0089ff;
+  color:#fff;
+}
+.wrap {
+  padding-top: 50px;
+}
+nav {  
+  height: 40px;
+  line-height: 40px;
+  background-color: #efefef;
+  color:#000;
+}
+section {
+  background-color: #fff;
+  color:#000;
+}
+footer {
+  margin-top: 40px;
+  font-size: 0.7em;
+  text-align: center;
+  background-color: gray;
+}
+
+.logo {
+  float: left;
+  font-size: 1.5em;
+}
+.top_info{
+  float: right;
+}
+.top_info li{
+  display: inline-block;
+}
+.top_info li:first-child:after {
+  content: "|";
+  padding: 0 20px;
+}
+.menu li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+.menu li a:hover {
+  opacity: 0.8;
+}
+.menu-tab {
+  padding: 10px 0;
+}
+.menu-tab:after{
+  clear: both;
+  float: none;
+  content:"";
+  display: table;
+}
+.menu-tab li {
+  float: left;
+  border: 1px solid #e6e6e6;
+  padding: 10px 30px;
+  margin-left:-1px;
+  cursor: pointer;
+}
+.menu-tab li.active{
+  background-color: #0089ff;
+  color: #fff;
+  font-weight: 700;
+}
+.menu01-top {
+  display: flex;
+  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+}
+.search-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.search-bar.text {
+  margin-right: auto;
+  width: 300px;  
+}
+.search-bar.date{
+  width: 200px;
+}
+.search-bar.date input:disabled {
+  cursor: pointer;
+}
+.input-title {
+  margin-left: -1px;
+  padding: 8px 20px 0 20px;
+  color: #495057;
+  text-align: center;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+.input-title.end {
+  padding: 8px 5px 0 10px;
+  background-color: #fff;
+  border-left: 0;
+}
+.form-control {
+  -ms-flex:auto;
+  flex:auto;
+  width: 1%;
+  margin-left: -1px;
+  padding:0 0 0 10px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-right:0;
+}
+
+.menu01-content {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  margin: auto;
+}
+table, th, td {
+  border: 1px solid #ced4da;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  vertical-align: middle;
+}
+th {
+  background-color: #e6eaee;
+  font-size: 0.8em;
+}
+tfoot {
+  border-top: 2px solid #333;
 }
